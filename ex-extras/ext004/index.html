@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Treinando</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        p#especial:hover {
+            color: red;
+        }
+
+        h1 {
+            font-size: 2.7em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1#titulo {
+            text-align: center;
+            font-size: 4em;
+        }
+
+        .subtitulo1::before {
+            content: '> ';
+            font-weight: normal;
+            font-size: 0.7em;
+        }
+
+        .subtitulo2::after {
+            content: ' <';
+            font-weight: normal;
+            font-size: 0.7em;
+        }
+
+        h2:hover::after {
+            content: ' <';
+            font-weight: normal;
+            font-size: 0.7em;
+        }
+
+        h2:hover::before {
+            content: '> ';
+            font-weight: normal;
+            font-size: 0.7em;
+        }
+
+        p#especial {
+            width: 305px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Teste</h1>
+    <h1>Título 1</h1>
+    <h2 class="subtitulo1">Subtítulo 1</h2>
+    <p id="especial">Vou fazer um teste de pseudo-classe aqui!</p>
+    <h2 class="subtitulo1">Subtítulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro quod nihil autem blanditiis odio nobis. Quisquam rerum error debitis aperiam molestias, praesentium architecto consectetur at? Nam laudantium doloribus non?</p>
+    <h2 class="subtitulo1">Subtítulo 3</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolorum consequuntur officiis eveniet hic, obcaecati cum repellat laboriosam earum iste, quasi excepturi id blanditiis rerum suscipit. Corrupti tenetur ea aut.</p>
+    <h1>Título 2</h1>
+    <h2 class="subtitulo2">Subtítulo 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora ipsam rem quibusdam facere eius voluptates unde voluptatum! Rem illum inventore et minima mollitia harum atque exercitationem eligendi ab sunt?</p>
+    <h2 class="subtitulo2">Subtítulo 5</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis mollitia repellendus molestias culpa nemo reiciendis vel labore amet, optio voluptate aut, perspiciatis repudiandae. Recusandae ratione aut suscipit! Ullam, inventore!</p>
+</body>
+</html>

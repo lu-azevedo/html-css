@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    background-color: #1E73BE;
+    margin: 0px;
+
+}
+
+header {
+    background-color: black;
+    height: 250px;
+}
+
+nav {
+    background-color: #1E73BE;
+    padding: 15px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+nav > a::after {
+    content: " ⇩";
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin-top: 68px;
+}
+
+main {
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    height: 1000px;
+}
+
+div {
+    background-color: rgb(199, 199, 199);
+}
+
+footer {
+    background-color: rgb(68, 68, 68);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
