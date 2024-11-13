@@ -56,12 +56,16 @@ main p {
     margin: 16px 0px;
 }
 
+main > .normal > p {
+    padding-bottom: 1em;
+}
+
 main > #fundo1 {
     margin: 0px -20px;
     padding: 60px 20px;
-    background: url('imagens/background001.jpg') no-repeat;
+    background: url('imagens/background001.jpg') right center no-repeat fixed;
     background-size: cover;
-    box-shadow: inset 6px 6px 9px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 6px 6px 13px 0px #00000070;
 }
 
 main > #fundo1 > p {
@@ -75,9 +79,9 @@ main > #fundo1 > p {
 main > #fundo2 {
     margin: 0px -20px;
     padding: 60px 20px;
-    background: url('imagens/background002.jpg') no-repeat;
+    background: url('imagens/background002.jpg') right center no-repeat fixed;
     background-size: cover;
-    box-shadow: inset 6px 6px 9px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 6px 6px 9px 5px #00000070;
 }
 
 main > #fundo2 > p {
