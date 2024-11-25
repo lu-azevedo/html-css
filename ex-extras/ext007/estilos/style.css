@@ -20,7 +20,7 @@
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--cor4);
+    background-color: var(--cor6);
 }
 
 header > nav {
@@ -37,7 +37,7 @@ header a {
 }
 
 header a:hover {
-    color: black;
+    color: var(--cor3);
     background-color: white;
     transition-duration: 0.2s;
 }
@@ -65,7 +65,7 @@ header p {
 main {
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 16px 40px 40px 40px;
     text-align: justify;
     background-color: white;
 }
@@ -73,6 +73,39 @@ main {
 main p {
     margin: 16px 0px;
     line-height: 36px;
+}
+
+main h1 {
+    margin: 16px 0px;
+    font-size: 1.8em;
+    padding-left: 4px;
+    background-image: linear-gradient(to right, #F06A00, transparent);
+}
+
+main h2 {
+    margin: 16px 0px;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+main .imagem {
+    background-color: #f3f3f3;
+    margin: 0px -40px 0px -40px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #f00000;
 }
 
 footer {
