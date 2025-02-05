@@ -1,11 +1,69 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Captain';
+    src: url(fontes/American\ Captain.otf) format(opentype), url(fontes/American\ Captain.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --cor1: #FF4B3E;
     --cor2: #FBD1A2;
+    --cor3: #db3e32;
+
+    --titulo: 'Captain', Arial;
+    --comum: "Open Sans", serif;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-color: var(--cor1);
+    height: 200px;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: var(--titulo);
+    font-size: 3.5em;
+    padding-top: 62px;
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 15px;
+    text-align: center;
+}
+
+nav > a {
+    font-family: var(--comum);
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor1);
+    transition-duration: 0.25s;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
