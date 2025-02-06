@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'Captain';
     src: url(fontes/American\ Captain.otf) format(opentype), url(fontes/American\ Captain.ttf) format(truetype);
@@ -16,6 +18,7 @@
 
     --titulo: 'Captain', Arial;
     --comum: "Open Sans", serif;
+    --base: 'Bebas Neue', serif;
 }
 
 * {
@@ -25,20 +28,27 @@
 
 body {
     background-color: var(--cor2);
+    font-family: var(--comum);
 }
 
 header {
-    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, #c7392f, #FF4B3E);
     height: 200px;
+    text-align: center;
+    color: white;
 }
 
 header > h1 {
-    color: white;
-    text-align: center;
     letter-spacing: 1px;
     font-family: var(--titulo);
     font-size: 3.5em;
     padding-top: 62px;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > p {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }
 
 nav {
@@ -66,4 +76,37 @@ main {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+    text-align: justify;
+}
+
+main > #titulo {
+    background-color: #ee0f0f;
+    margin: -20px -20px 0px -20px;
+}
+
+main #tituloimg {
+    background-color: #ee0f0f;
+    display: block;
+    margin: auto;
+}
+
+main > h1 {
+    font-family: var(--base);
+    font-size: 2.7em;
+    color: white;
+    background-color: #ee0f0f;
+    margin: -20px -20px 0px -20px;
+    padding: 20px;
+}
+
+main > h2 {
+    font-family: var(--base);
+    font-size: 2.2em;
+    color: #ee0f0f;
+
+}
+
+main > p {
+    padding: 15px 0px 15px 0px;
+    line-height: 35px;
 }
